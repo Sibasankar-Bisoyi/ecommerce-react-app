@@ -23,10 +23,11 @@ class MainContent extends Component {
   }
 
   // Executes when the user clicks on Refresh button
-  onClickRefresh() {
-    alert("Refresh Clicked");
-    console.log("Refresh clicked");
-  }
+  onClickRefresh = () => {
+    this.setState({
+      customerCount: 35,
+    });
+  };
 }
 
 export default MainContent;
